@@ -1,2 +1,2 @@
-# My Personal Profile Page
+# Personal Profile Page
  Project 1
