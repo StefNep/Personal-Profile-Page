@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/nycpic.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -75,6 +75,28 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+}
+div .profile-image {
+  margin-top: 25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .3s;
+  position: relative;
+  right: 400px;
+}
+div .profile-image:hover {
+  transform: scale(1.4) rotate(360deg);
+}  
+.heading {
+  font-size: 2.7em;
+  background-color: rgb(141, 219, 250);
+  border: 5px solid white;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  padding: 10px 30px;
 }
 .tag {
   background-color: #efefef;
@@ -101,12 +123,39 @@ header .profile-image:hover {
 .card:hover {
   border-color: #ff99ff;
 }
-
-ul.skills {
+.left-side {
+  margin: 30px;
+  padding: 25px 30px 20px;
+  max-width: 500px;
+  height: min-content;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.left-side:hover {
+  border-color: #ff99ff;
+}
+.coding-pic {
+  max-width: 440px;
+}    
+.traveler-pic {
+  max-width: 520px;
+  height: 470px;
+  margin-top: 1rem;
+  border: 5px solid white;
+  border-bottom: 5px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.traveler-pic:hover {
+  border-bottom-color: #ff99ff;
+}
+ul .skills {
   padding: 0;
   text-align: center;
 }
-
 .skills li {
   border-radius: 6px;
   display: inline-block;
@@ -150,12 +199,6 @@ a.social {
   background-size: 30px 30px;
   opacity: .4;
   transition: all .5s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
 }
 a.github {
   background-image: url(images/github.svg);
